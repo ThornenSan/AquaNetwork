@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    font-size: 1em;
+    background: #f2f5f9;
+    color: #000839;
+    overflow-x: hidden;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+body.offcanvas-menu:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+a {
+    color: #ff6363;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6363;
+    text-decoration: none;
+}
+
+.text-primary {
+    color: #ff6363 !important;
+}
+
+a.text-primary {
+    color: #ff6363 !important;
+}
+
+a.text-primary:hover {
+    color: #ff6363 !important;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Nav */
+.logo {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.logo:hover {
+    color: #ffffff;
+}
+
+.site-nav {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.site-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-nav h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+
+/* Hero */
+.hero {
+    background: #202040;
+    position: relative;
+}
+
+.hero .container {
+    position: relative;
+}
+
+.hero,
+.hero>.container>.row {
+    min-height: 650px;
+}
+
+.hero .sign-up-form {
+    padding: 10px;
+    border-radius: 7px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero .sign-up-form .form-control {
+    border: none;
+}
+
+.hero .sign-up-form .form-control:active,
+.hero .sign-up-form .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.hero .sign-up-form input[type="submit"] {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+
+.btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.hero .intro {
+    position: relative;
+    z-index: 2;
+}
+
+.hero .hero_img {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    bottom: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .hero .hero_img {
+        position: relative;
+        margin-top: -200px;
+        bottom: -100px;
+        margin-bottom: 140px;
+    }
+
+    .hero .col-lg-5{
+        max-width: unset;
+        flex: unset;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.hero .slant {
+    position: absolute;
+    width: calc(100% + 2px);
+    height: 380px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 1;
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
